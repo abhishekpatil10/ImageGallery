@@ -1,0 +1,6 @@
+<div class="parent_detail">
+    <div *ngFor="let data of photos" class="details">
+        <img src={{data.thumbnailUrl}}/>
+        <h3>{{data.id}} : {{data.title}}</h3>
+    </div>
+</div>

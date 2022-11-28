@@ -1,0 +1,12 @@
+<div class="main-card">
+    <div *ngIf="loading">
+        <h1>Loading......</h1>
+    </div>
+        <div *ngFor="let card of photos;let i=index">
+            <div class="one_card">
+                <img [src]="card.thumbnailUrl" class="card-img-top" />
+                <h4>{{card.id}} : {{card.title}}</h4>
+                <button (click)="show_gallery(card.id)">View More</button>
+            </div>
+        </div>
+</div>

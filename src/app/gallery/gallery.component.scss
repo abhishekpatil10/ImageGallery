@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-card{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns:auto auto auto auto auto;
+    grid-gap: 20px;
+}
+
+.one_card{
+    width: 250px;
+    border-radius: 5px;
+    padding:0 0 20px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    h4{
+        margin: 0;
+        padding: 20px;
+    }
+    img{
+        width: 250px;
+    }
+    button{
+        margin:0 0 0 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
